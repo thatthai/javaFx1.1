@@ -1,0 +1,4 @@
+Northy23,56789,1,Nattapol,Nueyen,20,Male,185,70,None,No,Yes,Pfizer,Pfizer,Pfizer,None
+Kerk12,11111,4,Kerking,Johnson,24,Male,67,190,None,No,Yes,Sinovec,Sinovec,Sinovec,None
+natty,33333,6,Nattapol,yoyo,12,Male,170,45,None,Yes,Yes,Sinovec,Moderna,Other,None
+armer,55555,7,Tanny,Teddy,31,Male,70,180,None,Yes,Yes,Sinovec,Sinovec,Sinovec,None

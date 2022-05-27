@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerClass">
+   <children>
+      <ImageView fitHeight="741.0" fitWidth="756.0" layoutX="-481.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo/สกรีนช็อต%202022-05-27%20021806.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="-1.0" prefHeight="717.0" prefWidth="246.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button fx:id="btnMain" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#ClickClose" onMouseClicked="#handleClose" prefHeight="107.0" prefWidth="246.0" style="-fx-background-image: C:\Users\Mam23\Downloads\coronavirus-ga4923cb26_1920.png;" text="KMITL">
+               <font>
+                  <Font name="Segoe UI Semibold" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8736842274665833" green="0.1359064280986786" blue="0.1359064280986786" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5647059082984924" green="0.0470588244497776" blue="0.24705882370471954" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <graphic>
+                  <ImageView fitHeight="85.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photo/logo-KMITL-1-1-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button fx:id="btnProfile" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickClose" prefHeight="50.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Profile" textFill="#fff9f9">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDash" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickClose" prefHeight="50.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="#fafafa">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnUsers" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Users" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#ClickClose" prefHeight="66.0" prefWidth="259.0" style="-fx-background-color: transparent;" text=" LOG OUT">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@photo/3596149.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="262.0" layoutY="208.0">
+         <children>
+            <Pane fx:id="pnProfile" prefHeight="494.0" prefWidth="806.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <Pane layoutX="12.0" layoutY="6.0" prefHeight="175.0" prefWidth="782.0" style="-fx-background-color: #F7DC6F;" />
+                  <Pane layoutX="426.0" layoutY="197.0" prefHeight="239.0" prefWidth="368.0" style="-fx-background-color: #ABEBC6;">
+                     <children>
+                        <Text layoutX="42.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About health" wrappingWidth="270.4000000000001">
+                           <font>
+                              <Font name="SimSun-ExtB" size="23.0" />
+                           </font>
+                        </Text>
+                        <GridPane layoutX="28.0" layoutY="83.0" prefHeight="72.0" prefWidth="297.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.20001220703125" minWidth="10.0" prefWidth="150.8" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.39996337890625" minWidth="10.0" prefWidth="192.40000000000003" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Congenital Disease" />
+                              <Label text="Addicted to covid?" GridPane.rowIndex="1" />
+                              <Text fx:id="textdisease" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="textcovid" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="12.0" layoutY="197.0" prefHeight="239.0" prefWidth="399.0" style="-fx-background-color: C2E0F5;">
+                     <children>
+                        <Text layoutX="27.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About covid" wrappingWidth="270.4000000000001">
+                           <font>
+                              <Font name="SimSun-ExtB" size="23.0" />
+                           </font>
+                        </Text>
+                        <GridPane layoutX="41.0" layoutY="64.0" prefHeight="144.0" prefWidth="344.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.59996337890624" minWidth="10.0" prefWidth="210.99998779296874" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.2000122070312" minWidth="10.0" prefWidth="86.20001220703125" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="73.19998779296876" minHeight="9.199987792968756" prefHeight="29.600030517578126" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="73.19998779296876" minHeight="9.199987792968756" prefHeight="34.599963378906246" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="151.60001220703126" minHeight="2.4000244140625" prefHeight="31.999987792968753" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="151.60001220703126" minHeight="10.0" prefHeight="39.200012207031264" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Have you been vaccinated yet?" />
+                              <Label fx:id="TextD1" text="what is the first dose?" GridPane.rowIndex="1" />
+                              <Label fx:id="TextD2" text="what is the second dose?" GridPane.rowIndex="2" />
+                              <Label fx:id="TextD3" text="what is the third dose?" GridPane.rowIndex="3" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Text fx:id="textvacc" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="textdoes1" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="textdoes2" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="textdoes3" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Pane>
+                  <GridPane layoutX="91.0" layoutY="71.0" prefHeight="91.0" prefWidth="649.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.800048828125" minWidth="10.0" prefWidth="78.19998779296876" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="103.1999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="106.4000244140625" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="123.99996337890622" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="102.59999999999997" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="100.20000000000005" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox prefHeight="360.0" prefWidth="68.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="86.0" text="Name">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label prefHeight="33.0" prefWidth="83.0" text="        Sex       :">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="360.0" prefWidth="85.0" GridPane.columnIndex="1">
+                           <children>
+                              <Text fx:id="textname" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="8.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Text fx:id="textsex" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="-5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="360.0" prefWidth="234.0" GridPane.columnIndex="2">
+                           <children>
+                              <Label contentDisplay="RIGHT" prefHeight="32.0" prefWidth="91.0" text="  Last name" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label prefHeight="34.0" prefWidth="99.0" text="     Height       :">
+                                 <VBox.margin>
+                                    <Insets top="-5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="360.0" prefWidth="136.0" GridPane.columnIndex="3">
+                           <children>
+                              <Text fx:id="textlastname" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="8.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Text fx:id="textheigh" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5">
+                           <children>
+                              <Text fx:id="textage" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="textweight" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="136.0" prefWidth="106.0" GridPane.columnIndex="4">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="78.0" text="      Age    :" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label prefHeight="34.0" prefWidth="131.0" text="     Weight    :">
+                                 <font>
+                                    <Font name="Candara" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <Text layoutX="24.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information" wrappingWidth="270.4000000000001">
+                     <font>
+                        <Font name="SimSun-ExtB" size="23.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnDelete" layoutX="719.0" layoutY="443.0" mnemonicParsing="false" onAction="#ClickClose" text="Delete" />
+                  <Button fx:id="btnEdit" layoutX="621.0" layoutY="443.0" mnemonicParsing="false" onAction="#ClickClose" prefHeight="35.0" prefWidth="65.0" style="-fx-background-color: FF5733;" text="Edit" textFill="#e7e3e3" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnMain" prefHeight="200.0" prefWidth="806.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="494.0" prefWidth="806.0">
+                     <columns>
+                        <TableColumn fx:id="tableid" prefWidth="80.80001831054688" text="ID" />
+                        <TableColumn fx:id="tablename" prefWidth="126.39996337890625" text="FirstName" />
+                        <TableColumn fx:id="tablelastname" prefWidth="134.4000244140625" text="LastName" />
+                        <TableColumn fx:id="tableinfect" prefWidth="71.20001220703125" text="Infect" />
+                        <TableColumn fx:id="tablevacc" prefWidth="89.60003662109375" text="Vacineted " />
+                        <TableColumn fx:id="tabledoes1" prefWidth="84.79998779296875" text="1st does" />
+                        <TableColumn fx:id="tabledoes2" prefWidth="100.7999267578125" text="2nd does" />
+                        <TableColumn fx:id="tabledoes3" prefWidth="116.00006103515625" text="3rd does" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane fx:id="pnlDashboard" prefHeight="494.0" prefWidth="774.0" style="-fx-background-color: ffffff;">
+               <children>
+                  <HBox layoutY="-4.0" prefHeight="125.0" prefWidth="774.0">
+                     <children>
+                        <VBox prefHeight="126.0" prefWidth="171.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="177.0" text="22000">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="1.0" green="0.14814814925193787" blue="0.14814814925193787" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="181.0" text="Total">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="126.0" prefWidth="190.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="228.0" text="22000">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="232.0" text="Total">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="126.0" prefWidth="190.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="228.0" text="22000">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="232.0" text="Total">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="126.0" prefWidth="190.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="228.0" text="22000">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="27.0" prefWidth="232.0" text="Total">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="12.0" layoutY="98.0" prefHeight="382.0" prefWidth="756.0">
+                     <children>
+                        <HBox prefHeight="196.0" prefWidth="756.0">
+                           <children>
+                              <VBox prefHeight="182.0" prefWidth="181.0">
+                                 <children>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="150.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="214.0" prefWidth="756.0">
+                           <children>
+                              <VBox prefHeight="124.0" prefWidth="180.0" style="-fx-background-color: #EAEDED;" />
+                              <VBox prefHeight="124.0" prefWidth="180.0" style="-fx-background-color: #EAEDED;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="101.0" prefWidth="180.0" style="-fx-background-color: #58D68D;" text="Total" textFill="#fcfcfc">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="50.0" prefWidth="270.0" text="200">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Circle fill="DODGERBLUE" radius="68.0" stroke="#5dd48fdb" strokeType="INSIDE" strokeWidth="10.0" style="-fx-fill: transparent;" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="124.0" prefWidth="180.0" style="-fx-background-color: #EAEDED;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="101.0" prefWidth="180.0" style="-fx-background-color: #2874A6;" text="Total" textFill="#fcfcfc">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="50.0" prefWidth="270.0" text="200">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Circle fill="DODGERBLUE" radius="68.0" stroke="#2874a6" strokeType="INSIDE" strokeWidth="10.0" style="-fx-fill: transparent;" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="124.0" prefWidth="180.0" style="-fx-background-color: #EAEDED;">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="101.0" prefWidth="180.0" style="-fx-background-color: #E74C3C;" text="Total" textFill="#fcfcfc">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="50.0" prefWidth="270.0" text="200">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Circle fill="DODGERBLUE" radius="68.0" stroke="#e74c3c" strokeType="INSIDE" strokeWidth="10.0" style="-fx-fill: transparent;" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane fx:id="pnlStatus" layoutX="244.0" layoutY="14.0" prefHeight="139.0" prefWidth="847.0" style="-fx-background-color: F97558;">
+         <children>
+            <Label fx:id="lblStatusMini" layoutX="64.0" layoutY="28.0" prefHeight="35.0" prefWidth="139.0" text="/home/" />
+            <Label fx:id="lblStatus" layoutX="64.0" layoutY="56.0" text="Home">
+               <font>
+                  <Font name="Georgia" size="46.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

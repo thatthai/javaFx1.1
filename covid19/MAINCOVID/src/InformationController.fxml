@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InformationController">
+   <children>
+      <Pane layoutX="-46.0" layoutY="37.0" prefHeight="86.0" prefWidth="670.0" style="-fx-background-color: FF5733;">
+         <children>
+            <Label fx:id="lblStatus" layoutX="97.0" layoutY="22.0" prefHeight="52.0" prefWidth="209.0" text="Register">
+               <font>
+                  <Font name="Georgia" size="46.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Text layoutX="43.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information" wrappingWidth="270.4000000000001">
+         <font>
+            <Font name="SimSun-ExtB" size="23.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="28.0" layoutY="283.0" prefHeight="136.0" prefWidth="566.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.800048828125" minWidth="10.0" prefWidth="78.19998779296876" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="140.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="87.20000000000002" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="146.20003662109372" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="486.19996643066406" minWidth="10.0" prefWidth="63.200000000000045" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="360.0" prefWidth="68.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="32.0" prefWidth="86.0" text="Name" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Label prefHeight="33.0" prefWidth="83.0" text="        Sex       :" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Label prefHeight="33.0" prefWidth="83.0" text="     Weight    :" />
+               </children>
+            </VBox>
+            <VBox prefHeight="360.0" prefWidth="85.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="NameField" prefHeight="27.0" prefWidth="210.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="6.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <ChoiceBox fx:id="Choicebox" prefHeight="38.0" prefWidth="86.0" scaleZ="2.0">
+                     <opaqueInsets>
+                        <Insets bottom="100.0" right="10.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="WeightField" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="104.0" promptText="cm.">
+                     <VBox.margin>
+                        <Insets left="10.0" right="70.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="360.0" prefWidth="234.0" GridPane.columnIndex="2">
+               <children>
+                  <Label contentDisplay="RIGHT" prefHeight="32.0" prefWidth="91.0" text="  Last name" textAlignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Label prefHeight="28.0" prefWidth="78.0" text="      Age    :" textAlignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Label prefHeight="34.0" prefWidth="99.0" text="     Height       :">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="360.0" prefWidth="136.0" GridPane.columnIndex="3">
+               <children>
+                  <TextField fx:id="LastField" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="AgeField" alignment="CENTER" prefHeight="26.0" prefWidth="97.0" promptText="year">
+                     <VBox.margin>
+                        <Insets right="80.0" />
+                     </VBox.margin></TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <TextField fx:id="HeightField" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="104.0" promptText="cm.">
+                     <VBox.margin>
+                        <Insets left="10.0" right="80.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" />
+         </children>
+      </GridPane>
+      <Text layoutX="43.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About covid" wrappingWidth="270.4000000000001">
+         <font>
+            <Font name="SimSun-ExtB" size="23.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="56.0" layoutY="463.0" prefHeight="144.0" prefWidth="530.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.20001220703125" minWidth="10.0" prefWidth="213.00003967285156" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.2000122070312" minWidth="10.0" prefWidth="175.60000000000005" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="538.2000122070312" minWidth="10.0" prefWidth="154.79999999999995" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="73.19998779296876" minHeight="9.199987792968756" prefHeight="29.600030517578126" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="73.19998779296876" minHeight="9.199987792968756" prefHeight="34.599963378906246" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="151.60001220703126" minHeight="2.4000244140625" prefHeight="31.999987792968753" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="151.60001220703126" minHeight="10.0" prefHeight="39.200012207031264" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Have you been vaccinated yet?" />
+            <RadioButton fx:id="yes1ch" mnemonicParsing="false" onAction="#getAddicCovid" text="Yes" GridPane.columnIndex="1" />
+            <Label fx:id="TextD1" text="what is the first dose?" GridPane.rowIndex="1" />
+            <Label fx:id="TextD2" text="what is the second dose?" GridPane.rowIndex="2" />
+            <Label fx:id="TextD3" text="what is the third dose?" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="Choicefirst" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="Choicesecond" prefHeight="15.0" prefWidth="151.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="Choicethird" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <RadioButton fx:id="No1ch" mnemonicParsing="false" onAction="#getAddicCovid" text="No" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <Line endX="-1.2999992370605469" endY="-87.70709991455078" layoutX="24.0" layoutY="133.0" startX="-1.2999992370605469" startY="676.6000366210938" stroke="#ff5733" />
+      <Text layoutX="45.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About health" wrappingWidth="270.4000000000001">
+         <font>
+            <Font name="SimSun-ExtB" size="23.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="68.0" layoutY="652.0" prefHeight="72.0" prefWidth="510.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.20001220703125" minWidth="10.0" prefWidth="164.8" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.39996337890625" minWidth="10.0" prefWidth="133.80001220703122" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.39996337890625" minWidth="10.0" prefWidth="120.39998779296877" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Congenital Disease" />
+            <Label text="Addicted to covid?" GridPane.rowIndex="1" />
+            <RadioButton fx:id="yes2ch" mnemonicParsing="false" onAction="#getAddicCovid" text="Yes" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="DiseaseField" alignment="CENTER" prefHeight="27.0" prefWidth="210.0" text="None" GridPane.columnIndex="1" />
+            <RadioButton fx:id="No2ch" mnemonicParsing="false" onAction="#getAddicCovid" prefWidth="60.0" text="No" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="Inforadd" layoutX="524.0" layoutY="737.0" mnemonicParsing="false" onAction="#AddInfo" style="-fx-background-color: FFA07A;" text="add" />
+      <ImageView fx:id="imback" fitHeight="28.0" fitWidth="26.0" layoutX="598.0" layoutY="1.0" onMouseClicked="#ClickInfor" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo/project1_comp-05-01.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="58.0" layoutY="151.0" prefHeight="100.0" prefWidth="530.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="454.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="353.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="76.0" text="Username">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usename">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="64.0" prefWidth="422.0">
+                     <children>
+                        <Label prefHeight="22.0" prefWidth="76.0" text="Password">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="PassId" prefHeight="26.0" prefWidth="137.0" promptText="password">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                        <PasswordField fx:id="ConPassId" prefHeight="26.0" prefWidth="140.0" promptText="Confirm password">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </PasswordField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
